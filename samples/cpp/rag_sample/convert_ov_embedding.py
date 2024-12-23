@@ -293,7 +293,7 @@ queries = ["您好",
 
 ov_version = get_version()
 # Init OV BGE Embeddings w/ Langchain
-embedding_device = 'NPU'
+embedding_device = 'CPU'
 print(f"Run OV BGE embedding on {embedding_device} with {ov_version}")
 encode_kwargs = {'normalize_embeddings': do_norm, "max_length": 512}
 embedding_model_kwargs = {"device": embedding_device}

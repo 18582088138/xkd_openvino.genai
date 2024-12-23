@@ -1,5 +1,7 @@
 # Copyright (C) 2023-2024 Intel Corporation
 # SPDX-License-Identifier: Apache-2.0
+cmake_minimum_required(VERSION 3.11)
+
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 # fix httplib issue
 if (MSVC)
@@ -14,6 +16,7 @@ find_package(OpenVINOGenAI REQUIRED PATHS
 )
 
 include_directories(include)
+include(FetchContent)
 
 find_package(OpenVINO REQUIRED COMPONENTS Runtime)
 

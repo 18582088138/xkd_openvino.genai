@@ -122,7 +122,7 @@ def send_data_to_server(host, port, json_data):
     headers = {"Content-Type": "application/json"}  
     conn.request("POST", "/db_init")
     # conn.request("POST", "/embeddings_init")
-
+    print("============response = conn.getresponse()=============")
     response = conn.getresponse()
     print("response.status: ", response.status)
     if response.status == 200:
@@ -138,6 +138,7 @@ def send_data_to_server(host, port, json_data):
 
     # conn.request("POST", "/embeddings", json_data, headers=headers)
     conn.request("POST", "/db_store_embeddings", json_data, headers=headers)
+    print("============response = conn.getresponse=============")
     response = conn.getresponse()
     print("response.status: ", response.status)
     if response.status == 200:

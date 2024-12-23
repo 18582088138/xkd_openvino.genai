@@ -17,6 +17,8 @@
 #include "blip.hpp"
 #include "db_pgvector.hpp"
 
+#include <thread>
+
 #ifdef _WIN32
 #include "windows.h"
 #include <codecvt>

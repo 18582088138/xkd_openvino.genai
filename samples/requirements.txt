@@ -4,7 +4,7 @@ numpy<2.0.0; sys_platform == 'darwin'
 einops==0.8.0  # For Qwen
 transformers_stream_generator==0.0.5  # For Qwen
 nltk==3.8.1 # solve bugs for nltk
-unstructured==0.12.5 # solve bugs for nltk
+unstructured==0.14.2 # solve bugs for nltk
 unstructured-client==0.18.0 # solve bugs for nltk
 diffusers==0.30.3
 librosa # For Whisper
